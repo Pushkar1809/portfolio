@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import Nav from "./Nav.tsx";
-import Headshot from "./assets/head.jpeg"
+import headshot from "./assets/head.png"
 
 function App() {
   return (
@@ -11,13 +11,11 @@ function App() {
 				<section className="flex flex-col items-center justify-between mt-[5rem]">
 					<img
 						className="w-4/12 rounded-lg drop-shadow-xl mb-3"
-						src={Headshot}
+						src={headshot}
 						alt="me"
 					/>
 					<span className="text-[4rem] animate-wiggle">👋</span>
-					<h2 className="text-3xl font-bold mb-2">
-						Hey there, I'm Pushkar
-					</h2>
+					<h2 className="text-3xl font-bold mb-2">Hey there, I'm Pushkar</h2>
 					<p className="text-2xl leading-7 text-center px-[5rem]">
 						A web developer with a passion for creating sleek and functional
 						digital experiences. Armed with a Bachelor's degree in Computer
