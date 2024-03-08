@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import Nav from "./Nav.tsx";
+import Headshot from "./assets/head.jpeg"
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
 				<section className="flex flex-col items-center justify-between mt-[5rem]">
 					<img
 						className="w-4/12 rounded-lg drop-shadow-xl mb-3"
-						src="./assets/head.jpeg"
+						src={Headshot}
 						alt="me"
 					/>
 					<span className="text-[4rem] animate-wiggle">👋</span>
