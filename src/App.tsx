@@ -1,8 +1,26 @@
+import { useEffect } from "react";
 import Footer from "./Footer";
 import Nav from "./Nav.tsx";
 import headshot from "./assets/head.png"
 
 function App() {
+	function preloadImage(src: string) {
+		return new Promise((resolve, reject) => {
+			const img = new Image();
+			img.onload = function () {
+				resolve(img);
+			};
+			img.onerror = img.onabort = function () {
+				reject(src);
+			};
+			img.src = src;
+		});
+	}
+
+	useEffect(() => {
+		preloadImage(headshot);
+	}, [])
+
   return (
 		<div className="h-[100vh] flex flex-col">
 			<Nav />
