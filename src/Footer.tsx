@@ -1,3 +1,5 @@
+import resume from './assets/resume.pdf';
+
 const Footer = () => {
   const socialLinks = [
 		{
@@ -27,7 +29,7 @@ const Footer = () => {
 		},
 		{
 			id: "Resume",
-			to: "src/assets/resume.pdf",
+			to: resume,
 			color: "default",
 		},
 		{
