@@ -10,7 +10,7 @@ function App() {
 				<section className="flex flex-col items-center justify-between mt-[5rem]">
 					<img
 						className="w-4/12 rounded-lg drop-shadow-xl mb-3"
-						src="src/assets/head.jpeg"
+						src="./assets/head.jpeg"
 						alt="me"
 					/>
 					<span className="text-[4rem] animate-wiggle">👋</span>
