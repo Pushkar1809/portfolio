@@ -4,37 +4,48 @@ import ui from './assets/stickers/ui-sticker.svg';
 import puzzle from "./assets/stickers/puzzle-sticker.svg";
 
 const Menu = () => {
-  const items = [
-		{
-			sticker: climb,
-			title: "Work",
-			to: "#work",
-		},
-		{
-			sticker: ui,
-			title: "Projects",
-			to: "#projects",
-		},
-		{
-			sticker: puzzle,
-			title: "Skills",
-			to: "#skills",
-		},
-		{
-			sticker: phone,
-			title: "Contact",
-			to: "#contact",
-		},
-	];
-
   return (
 		<div className="flex justify-center items-center w-full mt-10">
-			{items.map((item) => (
-				<div className="flex flex-col justify-center items-center">
-					<img className="h-[12rem] drop-shadow-xl" src={item.sticker} alt="work" />
-					<span className="text-2xl font-bold bg-black text-white px-4 rounded-full pb-1 mt-[-0.5rem]">{item.title}</span>
+			<div className={"flex flex-col justify-center items-center animate-breathe"}>
+					<img
+						className="h-[12rem] drop-shadow-xl"
+						src={climb}
+						alt="work"
+					/>
+					<span className="text-2xl font-bold bg-black text-white px-4 rounded-full pb-1 mt-[-0.5rem]">
+						Work
+					</span>
 				</div>
-			))}
+				<div className={"flex flex-col justify-center items-center animate-breathee"}>
+					<img
+						className="h-[12rem] drop-shadow-xl"
+						src={ui}
+						alt="projects"
+					/>
+					<span className="text-2xl font-bold bg-black text-white px-4 rounded-full pb-1 mt-[-0.5rem]">
+						Projects
+					</span>
+				</div>
+				<div className={"flex flex-col justify-center items-center animate-breathe"}>
+					<img
+						className="h-[12rem] drop-shadow-xl"
+						src={puzzle}
+						alt="skills"
+					/>
+					<span className="text-2xl font-bold bg-black text-white px-4 rounded-full pb-1 mt-[-0.5rem]">
+						Skills
+					</span>
+				</div>
+				<div className={"flex flex-col justify-center items-center animate-breathee"}>
+					<img
+						className="h-[12rem] drop-shadow-xl"
+						src={phone}
+						alt="contact"
+					/>
+					<span className="text-2xl font-bold bg-black text-white px-4 rounded-full pb-1 mt-[-0.5rem]">
+						Contact
+					</span>
+				</div>
 		</div>
 	);
 }

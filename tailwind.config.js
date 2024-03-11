@@ -8,9 +8,19 @@ export default {
 					"0%, 100%": { transform: "rotate(-3deg)" },
 					"50%": { transform: "rotate(3deg)" },
 				},
+				breathe: {
+					"0%, 100%": { transform: "translateY(1%)" },
+					"50%": { transform: "translateY(-1%)" },
+				},
+				breathee: {
+					"0%, 100%": { transform: "translateY(-1%)" },
+					"50%": { transform: "translateY(1%)" },
+				},
 			},
 			animation: {
 				wiggle: "wiggle 1s ease-in-out infinite",
+				breathe: "breathe 5s ease-in-out infinite",
+				breathee: "breathee 5s ease-in-out infinite",
 			},
 			colors: {
 				linkedin: "#258dbf",
