@@ -6,19 +6,22 @@ import shatranjCode from "../assets/imgs/shatranj-code.png";
 import shatranj from "../assets/imgs/shatranj-display.png";
 import pandaCode from "../assets/imgs/panda-code.png";
 import panda from "../assets/imgs/panda-display.png";
+import lighthouseCode from "../assets/imgs/lighthouse-code.png";
+import lighthouse from "../assets/imgs/lighthouse-display.png";
+import lsd from "../assets/imgs/lsd-display.png";
+import lsdCode from "../assets/imgs/lsd-code.png";
 
-export const experiences: Project[] = [
+export const projects: Project[] = [
 	{
-		title: "Geospatial Data Management WebApp",
-		codeImg: bytegisCode,
-		displayImg: "", // Get from Rakshit
-		date: "December 2021",
-		tags: ["React", "NodeJS", "OpenGIS", "Azure"],
+		title: "Liquid Staking Dapp",
+		codeImg: lsdCode,
+		displayImg: lsd,
+		date: "November 2023",
+		tags: ["React", "Ethers.js", "Solidity", "Styled-components"],
 		description:
-			"Transformative platform streamlines geospatial workflows, fostering collaboration and simplifying data management for producers and consumers.",
-		codeLink: "https://github.com/Pushkar1809/RapidGIS",
-		infoLink:
-			"https://imaginecup.microsoft.com/en-us/team/5f40199c-c65f-4e49-8f16-317edabc3af5",
+			"Dapp that will enable you to stake your ETH to Lido and Stader from an unified UI",
+		codeLink: "https://github.com/jayeshbhole/LightHouse",
+		liveLink: "https://liquid-staking-lido-stader.vercel.app/",
 	},
 	{
 		title: "Marsmello",
@@ -33,10 +36,23 @@ export const experiences: Project[] = [
 		infoLink: "https://devfolio.co/projects/marsmello-a90e",
 	},
 	{
+		title: "Geo-Data Management App",
+		codeImg: bytegisCode,
+		displayImg:
+			"https://images.unsplash.com/photo-1642953702322-a5da05d2e36b?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Get from Rakshit
+		date: "December 2021",
+		tags: ["React", "NodeJS", "OpenGIS", "Azure"],
+		description:
+			"Transformative platform streamlines geospatial workflows, fostering collaboration and simplifying data management for producers and consumers.",
+		codeLink: "https://github.com/Pushkar1809/RapidGIS",
+		infoLink:
+			"https://imaginecup.microsoft.com/en-us/team/5f40199c-c65f-4e49-8f16-317edabc3af5",
+	},
+	{
 		title: "Shatranj",
 		codeImg: shatranjCode,
 		displayImg: shatranj,
-		date: "Navember 2021",
+		date: "November 2021",
 		tags: ["React", "chess.js", "moralis", "infura"],
 		description:
 			"Chess dapp merging chess legacy with Web3, rewarding winners with unique, artsy chess NFTs for customization.",
@@ -44,7 +60,7 @@ export const experiences: Project[] = [
 		infoLink: "https://devfolio.co/projects/panda-wallet-698f",
 	},
 	{
-		title: "Geospatial Data Management WebApp",
+		title: "Panda Wallet",
 		codeImg: pandaCode,
 		displayImg: panda,
 		date: "December 2022",
@@ -55,9 +71,9 @@ export const experiences: Project[] = [
 		infoLink: "https://devfolio.co/projects/panda-wallet-698f",
 	},
 	{
-		title: "LightHouse - Project Management App",
-		codeImg: pandaCode,
-		displayImg: panda,
+		title: "LightHouse",
+		codeImg: lighthouseCode,
+		displayImg: lighthouse,
 		date: "May 2021",
 		tags: ["React", "Firebase"],
 		description:
