@@ -11,7 +11,7 @@ import panda from "./assets/images/panda.png";
 import pandaCode from "./assets/images/panda-code.png";
 import lst from "./assets/images/lst.png";
 import lstCode from "./assets/images/lst-code.png";
-import resume from "./assets/resume.pdf";
+import resume from "./assets/pushkar-borkar-resume.pdf";
 
 // use MD and make a simpleton MD parser
 export const headline: string = "Crafting *User-Centric* Digital Experiences.";
