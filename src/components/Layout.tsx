@@ -6,7 +6,7 @@ interface Props {
   title: string;
   children: React.ReactNode;
   iconStyles?: string;
-  id: string;
+  id?: string;
 }
 
 export const Layout = ({ icon, title, children, iconStyles, id }: Props) => (

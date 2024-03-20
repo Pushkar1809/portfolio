@@ -6,12 +6,6 @@ interface NavLink {
 }
 
 const Nav = () => {
-	
-
-	useEffect(() => {
-		
-	})
-
   const navLinks: NavLink[] = [
 		{ name: "home", idName: "home" },
 		{ name: "experience", idName: "exp" },
