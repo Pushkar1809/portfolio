@@ -1,7 +1,12 @@
 import { useEffect } from "react";
-import Footer from "./Footer";
-import Nav from "./Nav.tsx";
-import headshot from "./assets/head.png"
+import headshot from "./assets/images/headshot.png"
+import TopBar from "./sections/TopBar.tsx";
+import Nav from "./sections/Nav.tsx";
+import { EmphasisedText } from './components/EmphasisedText';
+import { headline } from "./data.ts";
+import peace from "./assets/svgs/peace.svg";
+import About from "./sections/About.tsx";
+import Experiences from './sections/Experiences';
 
 function App() {
 	function preloadImage(src: string) {
@@ -23,34 +28,38 @@ function App() {
 
   return (
 		<div className="h-[100vh] flex flex-col">
-			<Nav />
-			{/* Intro / Summary */}
-			<div className="flex-1">
-				<section className="flex flex-col items-center justify-between mt-[5rem]">
+			<TopBar />
+
+			<main className="max-w-[120ch] mx-auto">
+				<Nav />
+				<div className="flex items-center justify-between w-full my-[5rem]">
+					<div className="flex">
+						<img
+							src={peace}
+							alt="peace"
+							className="w-[5rem] mt-[-2.75rem] animate-wiggle"
+						/>
+						<div>
+							<h1 className="text-[2.75rem] font-semibold">
+								Hey, I am Pushkar.
+							</h1>
+							<EmphasisedText className="text-xl " text={headline} />
+						</div>
+					</div>
 					<img
-						className="w-4/12 rounded-lg drop-shadow-xl mb-3"
+						className="w-4/12 rounded-[3rem] border-[0.35rem] border-dark shadow-xl rotate-6"
 						src={headshot}
 						alt="me"
 					/>
-					<span className="text-[4rem] animate-wiggle">👋</span>
-					<h2 className="text-3xl font-bold mb-2">Hey there, I'm Pushkar</h2>
-					<p className="text-2xl leading-7 text-center px-[5rem]">
-						A web developer with a passion for creating sleek and functional
-						digital experiences. Armed with a Bachelor's degree in Computer
-						Science and Engineering, I've honed my skills through hackathons,
-						internships, and startup ventures. From crafting intuitive
-						interfaces to tackling complex backend challenges, I thrive on
-						turning ideas into reality. Dive into my portfolio and let's build
-						something amazing together!
-					</p>
-				</section>
-				{/* Projects */}
+				</div>
+				{/* Intro / Summary */}
+				<About />
 				{/* Work */}
+				<Experiences/>
+				{/* Projects */}
 				{/* Skills */}
 				{/* Links and Contact */}
-			</div>
-			{/* Copyright and footer */}
-			<Footer />
+			</main>
 		</div>
 	);
 }
