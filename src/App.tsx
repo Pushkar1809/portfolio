@@ -7,6 +7,7 @@ import { headline } from "./data.ts";
 import peace from "./assets/svgs/peace.svg";
 import About from "./sections/About.tsx";
 import Experiences from './sections/Experiences';
+import Projects from "./sections/Projects.tsx";
 
 function App() {
 	function preloadImage(src: string) {
@@ -57,6 +58,7 @@ function App() {
 				{/* Work */}
 				<Experiences/>
 				{/* Projects */}
+				<Projects/>
 				{/* Skills */}
 				{/* Links and Contact */}
 			</main>
