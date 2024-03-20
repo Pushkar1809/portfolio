@@ -5,8 +5,8 @@ import { Project as ProjType } from "../types";
 import { Project } from "../components/Project";
 import { PrimaryBtn } from "../components/PrimaryBtn";
 
-const Projects = () => (
-	<Layout icon={gem} title="things i have built.">
+const Projects = ({ id }: { id: string }) => (
+	<Layout id={id} icon={gem} title="things i have built.">
 		{projects.map((proj: ProjType) => (
 			<Project key={proj.id} {...proj} />
 		))}

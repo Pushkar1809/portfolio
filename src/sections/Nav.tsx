@@ -1,33 +1,88 @@
 import asterisk from "../assets/svgs/asterisk.svg";
-
+import { useEffect, useState } from "react";
 interface NavLink {
   name: string;
-  to: string;
+	idName: string;
 }
 
 const Nav = () => {
+	
+
+	useEffect(() => {
+		
+	})
+
   const navLinks: NavLink[] = [
-		{ name: "home", to: "#home" },
-		{ name: "experience", to: "#experiences" },
-		{ name: "projects", to: "#projects" },
-		{ name: "skills", to: "#skills" },
-    { name: "connect", to: "#connect" }
+		{ name: "home", idName: "home" },
+		{ name: "experience", idName: "exp" },
+		{ name: "projects", idName: "projects" },
+		{ name: "skills", idName: "skills" },
+		{ name: "connect", idName: "contact" },
 	];
   return (
-		<nav className="w-full py-5">
-			<ul className="flex justify-center items-center gap-5">
-				{navLinks.map(({ name, to }: NavLink, index: number) => (
-					<li key={index}>
-						<a
-							className="relative group text-xl font-thin select-none"
-							href={to}>
-							{name}
-							<img className="w-5 top-10 absolute right-[35%] animate-slowspin opacity-0 group-hover:top-6 group-hover:opacity-80 transition-all ease-in-out duration-300" src={asterisk} alt="asterisk"/>
-						</a>
-					</li>
-				))}
+		<nav className="fixed w-full top-[2.5rem] bg-gradient-to-b via-light/80 from-light to-light/0 px-5 rounded-full z-20 h-[6rem]">
+			<ul className="flex justify-center items-center gap-5 mt-5">
+				{navLinks.map(({ name, idName }: NavLink, index: number) => <NavLink name={name} key={index} idName={idName}  />)}
 			</ul>
 		</nav>
+	);
+}
+
+interface NavLinkProps {
+	idName: string;
+	name: string;
+}
+
+const NavLink = ({idName, name}: NavLinkProps) => {
+	const [isVisible, setIsVisible] = useState(false);
+	
+	useEffect(() => {
+		const element = document.getElementById(idName);
+		if(element){
+			const observer = new IntersectionObserver((entries) => {
+				const entry = entries[0];
+				setIsVisible(
+					entry.isIntersecting
+				);
+			}, { threshold: 0.5});
+			observer.observe(element)
+		}
+		return () => {
+			setIsVisible(false);
+		}
+	}, [idName])
+	return (
+		<li>
+			<button
+				onClick={() => {
+					if (idName === "home") {
+						window.scrollTo({
+							top: window.screenTop - 100,
+							behavior: "smooth",
+						});
+						return;
+					}
+					const element = document.getElementById(idName);
+					if (element) {
+						window.scrollTo({
+							top: element?.offsetTop - 50,
+							behavior: "smooth",
+						});
+					}
+				}}
+				className="relative group text-xl font-thin select-none">
+				{name}
+				<img
+					className={`w-5 ${
+						isVisible ? "top-6" : "top-10"
+					} absolute right-[35%] animate-slowspin ${
+						isVisible ? "opacity-80" : "opacity-0"
+					} group-hover:top-6 group-hover:opacity-80 transition-all ease-in-out duration-300`}
+					src={asterisk}
+					alt="asterisk"
+				/>
+			</button>
+		</li>
 	);
 }
 

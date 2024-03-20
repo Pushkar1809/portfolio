@@ -9,6 +9,8 @@ import About from "./sections/About.tsx";
 import Experiences from './sections/Experiences';
 import Projects from "./sections/Projects.tsx";
 import Skills from "./sections/Skills.tsx";
+import Contact from "./sections/Contact.tsx";
+import heart from "./assets/svgs/heart.svg";
 
 function App() {
 	function preloadImage(src: string) {
@@ -31,10 +33,10 @@ function App() {
   return (
 		<div className="h-[100vh] flex flex-col">
 			<TopBar />
+			<Nav />
 
 			<main className="max-w-[120ch] mx-auto">
-				<Nav />
-				<div className="flex items-center justify-between w-full my-[5rem]">
+				<div id="home" className="flex items-center justify-between w-full mb-[5rem] mt-[12rem]">
 					<div className="flex">
 						<img
 							src={peace}
@@ -57,12 +59,16 @@ function App() {
 				{/* Intro / Summary */}
 				<About />
 				{/* Work */}
-				<Experiences/>
+				<Experiences id="exp"/>
 				{/* Projects */}
-				<Projects/>
+				<Projects id="projects"/>
 				{/* Skills */}
-				<Skills/>
+				<Skills id="skills"/>
 				{/* Links and Contact */}
+				<Contact id="contact"/>
+				<div className="flex justify-end mt-3 mb-10">
+					<img src={heart} alt="heart" />
+				</div>
 			</main>
 		</div>
 	);

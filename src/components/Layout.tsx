@@ -6,10 +6,11 @@ interface Props {
   title: string;
   children: React.ReactNode;
   iconStyles?: string;
+  id: string;
 }
 
-export const Layout = ({icon, title, children, iconStyles}: Props) => (
-  <div className="flex items-start gap-3 pt-[5rem]">
+export const Layout = ({ icon, title, children, iconStyles, id }: Props) => (
+  <div id={id} className="flex items-start gap-3 py-[5rem]">
     <img src={icon} alt="icon" className={cn("w-[4rem]", iconStyles)} />
     <div className="flex-1">
       <h2 className="text-[2.25rem] font-semibold">{title}</h2>
