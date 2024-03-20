@@ -7,5 +7,3 @@ Current version: v0
 - Twitter/X: [0xPushkr](https://twitter.com/0xPushkr)
 - Instagram: [champagnebappi](https://www.instagram.com/champagnebappi/)
 - Twitch: [pushkarborkar](https://www.twitch.tv/pushkarborkar)
-
-![me](./src/assets/full.png)
