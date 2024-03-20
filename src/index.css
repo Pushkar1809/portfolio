@@ -16,9 +16,17 @@
 }
 
 body {
-  width: 60vw;
-  max-width: 150ch;
-  margin: 0 auto;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: #f2e8e4;
+  color: #1e1e1e;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+*::selection {
+  background-color: #1e1e1e;
+  color: #fe8450;
 }
