@@ -13,10 +13,8 @@ import lst from "./assets/images/lst.png";
 import lstCode from "./assets/images/lst-code.png";
 import resume from "./assets/pushkar-borkar-resume.pdf";
 
-// use MD and make a simpleton MD parser
 export const headline: string = "Crafting *User-Centric* Digital Experiences.";
 
-// use MD and make a simpleton MD parser
 export const aboutMe: string =
 	"I'm a *full stack developer* who loves creating smooth, eye-catching digital experiences. Crafting *intuitive interfaces* and tackling *complex coding challenges* really gets me going. *Design* feeds my soul too - web design systems, fashion, architecture, you name it. If it blends function with beauty, I'm obsessed! But I don't just geek out over tech and design. *Music* is my vibe - listening, making, discovering new tunes. And, 🤓 I geek out on music too.";
 
@@ -119,7 +117,7 @@ export const projects: Project[] = [
 				to: "https://github.com/jayeshbhole/MarsMello",
 			},
 			{
-				name: "more info",
+				name: "devfolio",
 				to: "https://devfolio.co/projects/marsmello-a90e",
 			},
 		],
@@ -143,7 +141,7 @@ export const projects: Project[] = [
 				to: "https://github.com/GHODA-crypto/shatranj",
 			},
 			{
-				name: "more info",
+				name: "devfolio",
 				to: "https://devfolio.co/projects/shatranj-d063",
 			},
 		],
@@ -167,7 +165,7 @@ export const projects: Project[] = [
 				to: "https://github.com/dark-circles-2022/panda-wallet",
 			},
 			{
-				name: "more info",
+				name: "devfolio",
 				to: "https://devfolio.co/projects/panda-wallet-698f",
 			},
 		],
