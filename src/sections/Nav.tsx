@@ -14,7 +14,7 @@ const Nav = () => {
 		{ name: "connect", idName: "contact" },
 	];
   return (
-		<nav className="fixed w-full top-[2.5rem] bg-gradient-to-b via-light/80 from-light to-light/0 px-5 rounded-full z-20 h-[6rem]">
+		<nav className="fixed w-full top-[2.5rem] bg-gradient-to-b from-light via-light/90 to-light/0 px-5 rounded-full z-20 h-[6rem] backdrop-blur-sm">
 			<ul className="flex justify-center items-center gap-5 mt-5">
 				{navLinks.map(({ name, idName }: NavLink, index: number) => <NavLink name={name} key={index} idName={idName}  />)}
 			</ul>
