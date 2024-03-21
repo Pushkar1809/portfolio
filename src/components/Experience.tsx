@@ -23,7 +23,7 @@ export const Experience = (props: ExpType) => {
 					</span>
 					<ul className="list-disc ml-4 my-3">
 						{summary.map((pt: string, index: number) => (
-							<li key={index}>{pt}</li>
+							<li key={index} className="max-w-[85ch]">{pt}</li>
 						))}
 					</ul>
 					<div className="flex flex-wrap items-center gap-1">
