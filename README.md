@@ -1,6 +1,6 @@
 # Pushkar's Portfolio
 
-Current version: v0
+Current version: v0.2.1
 
 - Linkedin : [Pushkar Borkar](https://www.linkedin.com/in/pushkar-borkar/)
 - Github: [Pushkar1809](https://github.com/Pushkar1809)
