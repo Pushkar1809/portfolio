@@ -5,12 +5,12 @@ export const Project = (props: ProjType) => {
 	const { title, displayImageSrc, description, timePeriod, skills, urls } =
 		props;
 	return (
-		<div className="relative group/img flex items-start gap-3 border-b border-dark/50 border-dashed px-10">
+		<div className="relative group/img flex items-start gap-3 border-b border-dark/50 border-dashed px-10 overflow-hidden">
 			<div className="flex items-center gap-3 py-6">
 				<img
 					src={displayImageSrc}
 					alt={title}
-					className="opacity-0 w-3/12 ml-[-28ch] group-hover/img:opacity-100 group-hover/img:ml-[-5ch] transition-all ease-in-out duration-300 rounded-lg border-[0.25rem] border-dark shadow-xl"
+					className="opacity-0 w-3/12 ml-[-28ch] group-hover/img:opacity-100 group-hover/img:ml-[-3ch] transition-all ease-in-out duration-300 rounded-lg border-[0.25rem] border-dark shadow-lg"
 				/>
 				<div>
 					<h3 className="text-xl font-semibold">{title}</h3>
