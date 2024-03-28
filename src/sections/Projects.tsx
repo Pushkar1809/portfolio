@@ -10,7 +10,7 @@ const Projects = ({ id }: { id: string }) => (
 		{projects.map((proj: ProjType) => (
 			<Project key={proj.id} {...proj} />
 		))}
-		<div className="flex items-center gap-1 my-3 ml-10">
+		<div className="flex items-center gap-1 my-3 md:ml-10 lg:ml-3">
 			View more projects on
 			<PrimaryBtn label="GitHub" to="https://github.com/Pushkar1809" />
 		</div>

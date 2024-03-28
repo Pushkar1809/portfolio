@@ -30,3 +30,9 @@ img {
   background-color: #1e1e1e;
   color: #fe8450;
 }
+
+@media only screen and (max-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
+}

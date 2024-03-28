@@ -13,7 +13,7 @@ const TopBar = () => {
 		};
 	}, []);
 	return (
-		<div className="fixed w-full border-b border-dark z-20 bg-light h-[2.5rem] flex justify-center items-center">
+		<div className="fixed px-10 w-full border-b border-dark z-20 bg-light h-[2.5rem] flex justify-center items-center">
 			<div className="flex w-full items-center justify-between max-w-[120ch] mx-auto text-sm font-light">
 				<p>
 					Pune, <span className="font-medium">India</span>
