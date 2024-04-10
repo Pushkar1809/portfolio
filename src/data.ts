@@ -11,7 +11,7 @@ import panda from "./assets/images/panda.png";
 import pandaCode from "./assets/images/panda-code.png";
 import lst from "./assets/images/lst.png";
 import lstCode from "./assets/images/lst-code.png";
-import resume from "./assets/pushkar-borkar-resume.pdf";
+import resume from "./assets/Pushkar_Borkar_Resume.pdf";
 
 export const headline: string = "Crafting *User-Centric* Digital Experiences.";
 

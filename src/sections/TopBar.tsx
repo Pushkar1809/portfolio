@@ -1,5 +1,5 @@
 import { PrimaryBtn } from "../components/PrimaryBtn";
-import resume from "../assets/pushkar-borkar-resume.pdf";
+import resume from "../assets/Pushkar_Borkar_Resume.pdf";
 import { useState, useEffect } from "react";
 
 const TopBar = () => {
