@@ -182,11 +182,11 @@ export const projects: Project[] = [
 		urls: [
 			{
 				name: "live",
-				to: "https://liquid-staking-lido-stader.vercel.app/",
+				to: "https://lst-agg.vercel.app/",
 			},
 			{
 				name: "github",
-				to: "https://github.com/jayeshbhole/LightHouse",
+				to: "https://github.com/Pushkar1809/Liquid-Staking-Agg",
 			},
 		],
 	},
