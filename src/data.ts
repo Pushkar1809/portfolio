@@ -23,7 +23,7 @@ export const calendlyUrl: string = "https://calendly.com/pushkar1809/a-quick-con
 export const experiences: Experience[] = [
 	{
 		id: 0,
-		role: "Full Stack Software Developer",
+		role: "Lead Software Engineer",
 		company: "folioX",
 		companyLogoSrc: foliox,
 		companyUrl: "https://www.foliox.io/",
@@ -59,7 +59,7 @@ export const experiences: Experience[] = [
 	},
 	{
 		id: 2,
-		role: "Full Stack Software Developer",
+		role: "Founding Software Developer",
 		company: "OnboardStudioOü",
 		companyLogoSrc: onboard,
 		summary: [
